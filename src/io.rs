@@ -1,8 +1,13 @@
 use std::io::{self, Write};
 
 pub fn run() {
+    // trim removes whitespace from beginning and end, \n too
+    // read_line: pass a mutable reference, allowing fn to modify the existing string without taking ownership
+    // parse converts string into another type
+
+    // string
     let mut name = String::new();
-    io::stdin().read_line(&mut name).unwrap(); // pass a mutable reference, allowing the function to modify the existing string without taking ownership of it.
+    io::stdin().read_line(&mut name).unwrap();
 
     let name = name.trim();
     println!("Hello, {}!", name);
