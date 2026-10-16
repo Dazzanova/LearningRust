@@ -6,6 +6,7 @@ pub fn run() {
     // parse converts string into another type
 
     // string
+    println!("Enter your name:");
     let mut name = String::new();
     io::stdin().read_line(&mut name).unwrap();
 
@@ -15,6 +16,7 @@ pub fn run() {
     io::stdout().flush().unwrap();
 
     // integer
+    println!("Enter your age:");
     let mut age = String::new();
 
     io::stdin().read_line(&mut age).unwrap();
@@ -25,4 +27,16 @@ pub fn run() {
 
     let next_year_age = age + 1;
     println!("Next year, age is {next_year_age}");
+
+    // boolean
+    println!("Are you a max fan? (1/3/33)");
+    let mut bool = String::new();
+    io::stdin().read_line(&mut bool).unwrap();
+
+    let is_max_fan = match bool.trim() {
+        "3" | "33" | "1" => true,
+        _ => false,
+    };
+
+    println!("Is max fan: {is_max_fan}");
 }
