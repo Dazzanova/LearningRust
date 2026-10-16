@@ -9,10 +9,10 @@ pub fn run() {
     println!("z: {z}");
 
     // var types
-    let age: u8 = 19;
-    let temperature: f64 = 36.5;
-    let active: bool = true;
-    let grade: char = 'A';
+    let _age: u8 = 19;
+    let _temperature: f64 = 36.5;
+    let _active: bool = true;
+    let _grade: char = 'A';
 
     // Constants
     const MAXX: i32 = 100;
