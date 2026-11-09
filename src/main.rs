@@ -8,4 +8,5 @@ fn main() {
     io::run();
     condition::run();
     loops::run();
+    functions::run();
 }
